@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(172, 171, 171);
+    color: rgb(255, 2, 2);
+    padding: 20px;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+form{
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+form fieldset {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#pessoal input {
+    padding: 10px 250px;
+    background-color: #ebe6e6;
+}
+
+
+form legend{
+    padding: 0 10px;
+    font-weight: bold;
+    color: rgb(8, 4, 4)
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+form input[type="text"]
+form input[type="email"]
+form input[type="password"]
+form input[type="number"]
+form input[type="date"]
+form input[type="url"]
+form select,
+form textarea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+form button{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover{
+    background-color: chartreuse;
+}

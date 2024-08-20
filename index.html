@@ -10,8 +10,9 @@
 
     <h1>Formulário Completo</h1>
 
-    <form>
-        <fieldset>
+    <form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate accept-charset="UTF-8" target="_blank">
+        
+        <fieldset id="pessoal">
             <legend>Informações Pessoais</legend>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlenght="100">
@@ -30,30 +31,28 @@
 
             <label for="Website">Website:</label>
             <input type="url" id="website" name="website" placeholder="http://www.seusite.com" required>
+
         </fieldset>
 
         <fieldset>
             <legend>Preferências</legend>
             <label>Gênero:</label>
-            <input type="radio" id="masculino" name="genero" value="masculino" required checked>
             <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required checked>
 
             <input type="radio" id="feminino" name="genero" value="feminino" required>
             <label for="feminino">Feminino</label>
 
-        </fieldset>
-
-        <fieldset>
             <label>Interesses:</label>
-            <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
             <label for="tecnologia">Tecnologia</label>
-
-            <input type="checkbox" id="moda" name="interesses" value="moda">
+            <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+            
             <label for="moda">Moda</label>
-
-            <input type="checkbox" id="esportes" name="interesses" value="esportes">
+            <input type="checkbox" id="moda" name="interesses" value="moda">
+            
             <label for="esportes">Esportes</label>
-
+            <input type="checkbox" id="esportes" name="interesses" value="esportes">
+            
             <label for="cidade">Cidade:</label>
             <select id="cidade" name="cidade" required>
                 <option value="sao-paulo">São Paulo</option>
@@ -64,6 +63,7 @@
             </select>
             <label for="descricao">Descrição:</label>
             <textarea name="descricao" id="descricao" rows="5" placeholder="Deixe sua mensagem!" required></textarea>
+
         </fieldset>
 
         <fieldset>
